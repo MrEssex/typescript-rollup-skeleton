@@ -1,3 +1,3 @@
-var greet = function () { return console.log("Hello World"); };
+var greet = function () { return console.log('Hello World'); };
 
-export { greet };
+export default greet;

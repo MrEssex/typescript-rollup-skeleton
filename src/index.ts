@@ -1,1 +1,3 @@
-export const greet = () => console.log("Hello World");
+const greet: Function = (): void => console.log('Hello World');
+
+export default greet;

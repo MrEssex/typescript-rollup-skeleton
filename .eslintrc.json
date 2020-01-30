@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:mocha/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "mocha"
+  ],
+  "env": {
+    "es6": true,
+    "commonjs": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "import/no-unresolved": 0,
+    "no-console": "off"
+  },
+  "overrides": [
+    {
+      "files": "*.spec.js",
+      "excludedFiles": [
+        "./dist",
+        "./src"
+      ],
+      "plugins": [
+        "mocha"
+      ],
+      "env": {
+        "mocha": true
+      },
+      "extends": "plugin:mocha/recommended",
+      "rules": {
+        "prefer-arrow-callback": "off",
+        "no-undef": "off",
+        "func-names": "off",
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}

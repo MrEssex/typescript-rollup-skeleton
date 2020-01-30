@@ -1,1 +1,2 @@
-export declare const greet: () => void;
+declare const greet: Function;
+export default greet;
