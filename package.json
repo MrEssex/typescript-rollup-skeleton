@@ -1,0 +1,42 @@
+{
+  "name": "typescript-rollup-skeleton",
+  "version": "1.0.0",
+  "description": "A simple skeleton for building Node modules with TypeScript, bundled with Rollup",
+  "module": "dist/index.es.js",
+  "main": "dist/index.js",
+  "browser": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrEssex/typescript-rollup-skeleton.git"
+  },
+  "author": {
+    "email": "kylegavinessex@hotmail.com",
+    "name": "Kyle Essex"
+  },
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrEssex/typescript-rollup-skeleton/issues"
+  },
+  "homepage": "https://github.com/MrEssex/typescript-rollup-skeleton#readme",
+  "dependencies": {
+    "rollup": "^1.30.1",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1",
+    "mocha-sinon": "^2.1.0",
+    "sinon": "^8.1.1"
+  }
+}
