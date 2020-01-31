@@ -1,11 +1,9 @@
 {
   "extends": [
-    "airbnb",
-    "plugin:mocha/recommended"
+    "airbnb"
   ],
   "plugins": [
-    "@typescript-eslint",
-    "mocha"
+    "@typescript-eslint"
   ],
   "env": {
     "es6": true,
@@ -13,10 +11,6 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
-  "rules": {
-    "import/no-unresolved": 0,
-    "no-console": "off"
-  },
   "overrides": [
     {
       "files": "*.spec.js",
@@ -32,10 +26,10 @@
       },
       "extends": "plugin:mocha/recommended",
       "rules": {
-        "prefer-arrow-callback": "off",
-        "no-undef": "off",
-        "func-names": "off",
-        "no-unused-expressions": "off"
+        "prefer-arrow-callback": 0,
+        "mocha/prefer-arrow-callback": 2,
+        "func-names": 0,
+        "no-unused-expressions": 0
       }
     }
   ]
