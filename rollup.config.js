@@ -8,14 +8,17 @@ export default {
       file: pkg.main,
       format: 'umd',
       name: 'index.cjs.js',
+      exports: 'default',
     },
     {
       file: pkg.module,
       format: 'es',
+      exports: 'default',
     },
     {
       file: pkg.browser,
       format: 'cjs',
+      exports: 'default',
     },
   ],
   external: [
