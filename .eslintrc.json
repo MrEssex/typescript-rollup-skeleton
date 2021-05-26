@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "airbnb"
-  ],
   "plugins": [
     "@typescript-eslint"
   ],
