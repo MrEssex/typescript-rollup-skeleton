@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import greet from '../dist/index.cjs';
+import greet from '../dist/index.cjs.js';
 
 import 'mocha-sinon';
 
