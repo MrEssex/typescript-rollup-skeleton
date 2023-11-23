@@ -1,3 +1,1 @@
-var greet = function () { return console.log('Hello World'); };
-
-export default greet;
+const o=()=>console.log("Hello World");export{o as default};

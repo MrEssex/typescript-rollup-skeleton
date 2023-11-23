@@ -1,5 +1,1 @@
-'use strict';
-
-var greet = function () { return console.log('Hello World'); };
-
-module.exports = greet;
+"use strict";module.exports=()=>console.log("Hello World");

@@ -1,18 +1,19 @@
 {
+  "extends": "./tsconfig-checks.json",
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist",
     "module": "ES6",
-    "noImplicitAny": true,
+    "target": "ES2020",
     "outDir": "./dist",
-    "target": "ES5",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
     "node_modules",
-    "test/**/*.spec.js"
-  ],
+    "./src/**/*.spec.js"
+  ]
 }
